@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create( email: "kubi9@hotmail.com", username: "koobyxes", name: "Kubilay Caglayan", password: "asdasd" )
-User.create( email: "marios@hotmail.com", username: "marios", name: "Marios Kanellopoulos", password: "asdasd" )
-User.create( email: "jamilia@hotmail.com", username: "millimil", name: "Jamilia Arsenovna", password: "asdasd" )
+User.create( email: "world@hotmail.com", username: "world", name: "World Champion", password: "asdasd" )
+User.create( email: "somebody@hotmail.com", username: "somebody", name: "George Lucas", password: "asdasd" )
 
 Tweeet.create( tweeet: "Today the weather is awesome!", user_id: 1)
 Tweeet.create( tweeet: "Today the weather is bad!", user_id: 2)
