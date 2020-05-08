@@ -132,3 +132,153 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 422ms (Views: 415.7ms | ActiveRecord: 1.6ms | Allocations: 111721)
 
 
+Started GET "/users/sign_in" for ::1 at 2020-05-08 15:30:48 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/b53468b23d9d39c6/variables" for ::1 at 2020-05-08 15:30:48 +0300
+Started GET "/" for ::1 at 2020-05-08 15:30:50 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/fbd5ce9c69e5522f/variables" for ::1 at 2020-05-08 15:30:51 +0300
+Started GET "/" for ::1 at 2020-05-08 15:30:53 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/514192bff8a27af2/variables" for ::1 at 2020-05-08 15:30:54 +0300
+Started GET "/" for ::1 at 2020-05-08 15:34:50 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/59dde9ac2d00af37/variables" for ::1 at 2020-05-08 15:34:51 +0300
+Started GET "/" for ::1 at 2020-05-08 15:34:53 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/5571c5fd0b5e61d1/variables" for ::1 at 2020-05-08 15:34:53 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20200508121952)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200508121952"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-05-08 15:35:14 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.4ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3774)
+Completed 500 Internal Server Error in 403ms (ActiveRecord: 1.1ms | Allocations: 124018)
+
+
+
+ActionView::Template::Error - The asset "application.js" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/030fefc1bb6909f5/variables" for ::1 at 2020-05-08 15:35:14 +0300
+Started GET "/" for ::1 at 2020-05-08 15:35:50 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 774)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms | Allocations: 10206)
+
+
+
+ActionView::Template::Error - The asset "application.js" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/b104ae6b2b2813e4/variables" for ::1 at 2020-05-08 15:35:50 +0300
+Started GET "/" for ::1 at 2020-05-08 15:35:51 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 764)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 10192)
+
+
+
+ActionView::Template::Error - The asset "application.js" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/0594b478cfdb5e5e/variables" for ::1 at 2020-05-08 15:35:51 +0300
+Started GET "/" for ::1 at 2020-05-08 15:35:56 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3989)
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 0.5ms | Allocations: 138609)
+
+
+
+LoadError - cannot load such file -- coffee_script:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/989a19194d73d468/variables" for ::1 at 2020-05-08 15:35:56 +0300
+Started GET "/" for ::1 at 2020-05-08 15:37:32 +0300
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1012)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.1ms | Allocations: 94294)
+
+
+
+ActionView::Template::Error - undefined method `user_signed_in?' for #<#<Class:0x00007fb5f469dc80>:0x00007fb5f4682818>:
+  app/views/layouts/application.html.erb:42
+
+Started POST "/__better_errors/90b062ba4407f456/variables" for ::1 at 2020-05-08 15:37:32 +0300
+Started GET "/" for ::1 at 2020-05-08 15:41:01 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mTweeet Load (0.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets"[0m
+  ↳ app/views/tweeets/index.html.erb:14
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3863)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 14469)
+
+
