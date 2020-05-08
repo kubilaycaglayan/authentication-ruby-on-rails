@@ -3743,3 +3743,34 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.8ms | Allocations: 17323)
 
 
+Started GET "/" for ::1 at 2020-05-08 18:12:00 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TweeetsController#index as HTML
+  Rendering tweeets/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweeets/index.html.erb:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweeets" WHERE "tweeets"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tweeets/_profile.html.erb:26
+  Rendered tweeets/_profile.html.erb (Duration: 2.9ms | Allocations: 1687)
+  Rendered tweeets/_form.html.erb (Duration: 3.0ms | Allocations: 3098)
+  [1m[36mTweeet Load (0.2ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY created_at DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweeets/_feed.html.erb:21
+  Rendered tweeets/_feed.html.erb (Duration: 15.7ms | Allocations: 10236)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 0.2ms | Allocations: 129)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 39.9ms | Allocations: 22278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 43.7ms | ActiveRecord: 2.5ms | Allocations: 31385)
+
+
