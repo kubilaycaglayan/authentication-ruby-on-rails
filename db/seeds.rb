@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create( email: "kubi9@hotmail.com", username: "koobyxes", name: "Kubilay Caglayan", password: "asdasd" )
+User.create( email: "marios@hotmail.com", username: "marios", name: "Marios Kanellopoulos", password: "asdasd" )
+User.create( email: "jamilia@hotmail.com", username: "millimil", name: "Jamilia Arsenovna", password: "asdasd" )
+
+Tweeet.create( tweeet: "Today the weather is awesome!", user_id: 1)
+Tweeet.create( tweeet: "Today the weather is bad!", user_id: 2)
+Tweeet.create( tweeet: "Today the weather is sunny!", user_id: 3)
+Tweeet.create( tweeet: "My favorite song is Stairway to Heaven!", user_id: 1)
+Tweeet.create( tweeet: "My favorite song is Enter Sandman!", user_id: 2)
+Tweeet.create( tweeet: "My favorite song is Hotel California!", user_id: 3)
